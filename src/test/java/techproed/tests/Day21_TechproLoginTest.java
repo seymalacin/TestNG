@@ -10,11 +10,11 @@ public class Day21_TechproLoginTest {
 
 
 
-    @Test
+    @Test(groups = "regression-tests")
     public void loginTest(){
-        Driver.getDriver().get(ConfigReader.getProperty("techpro_test_url"));
         TechproLoginPage techproLoginPage = new TechproLoginPage();
         TechproHomePage techproHomePage = new TechproHomePage();
+        Driver.getDriver().get(ConfigReader.getProperty("techpro_test_url"));
         techproLoginPage.username.sendKeys(ConfigReader.getProperty("techpro_test_username"));
         techproLoginPage.password.sendKeys(ConfigReader.getProperty("techpro_test_password"));
         techproLoginPage.submitButton.click();
@@ -23,11 +23,10 @@ public class Day21_TechproLoginTest {
         Assert.assertTrue(techproHomePage.homeHeader.isDisplayed());
 //        Sayfadan cikis yap ve cikis yapildigini test et
         techproHomePage.homeLogoutButton.click();
-
 //        Cikis olduguna dair assertion yap
         Assert.assertTrue(techproLoginPage.submitButton.isDisplayed());
-
- //       Driveri kapat
+//        Driver i kapat
         Driver.closeDriver();
     }
-}
+    }
+

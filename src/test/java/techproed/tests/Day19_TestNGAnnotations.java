@@ -25,6 +25,27 @@ public class Day19_TestNGAnnotations {
    @Test =@Test(priority = 0)
     */
 
+    /*
+   @Test : Test case ousturmak icin kullanilir
+   @Before ve @After : 5 Before 5 After anotations var
+   suite > tests > grup > class > method
+   @BeforeSuite : her bir test suite den once 1 sefer calisir
+   @AfterSuite : her bir test suiteden sonra 1 sefer calisir
+   @BeforeTest : her bir testden once(TEST CASE ILE KARISTIRILMAMALI) 1 sefer calisir
+   @AfterTest : her bir testden sonra(TEST CASE ILE KARISTIRILMAMALI) 1 sefer calisir
+   @BeforeClass: her bir classdan once 1 sefer calisir
+   @AfterClass: her bir classdan sonra 1 sefer calisir
+   @BeforeMethod: her bir @Test annotationdan once tek sefer calisir. JUnitdeki karsiligi @Before
+   @AfterMethod: her bir @Test annotationdan sonra tek sefer calisir. JUnitdeki karsiligi @After
+   -------------------------------------------------------------------------------------------
+   @Ignore : @Test caseleri atlamak(skip,ignore) icin kullanilir
+   @Test(enabled = false) : @Test caseleri kullanima kapatmak icin kullanilir
+   ---------------------------------------------------------------------------------------------
+   TestNG de test case ler isim sirasina gore calisir
+   @Test(priority = 1) : Test caseler oncelemek icin kullnalir
+   NOT : default prioriry nin degeri 0 a esittir
+   @Test = @Test(priority = 0)
+    */
     @BeforeSuite
     public void beforeSuite(){
         System.out.println("Before Suite");
@@ -45,8 +66,6 @@ public class Day19_TestNGAnnotations {
     public void beforeMethod(){
         System.out.println("Before Method");
     }
-
-
     @AfterSuite
     public void afterSuite(){
         System.out.println("After Suite");
@@ -63,9 +82,7 @@ public class Day19_TestNGAnnotations {
     public void afterMethod(){
         System.out.println("After Method");
     }
-
-
-    @Test(priority = 1)
+    @Test(priority = 1,groups = "regression-tests")
     public void test7(){
         System.out.println("Test 7");
     }
@@ -73,7 +90,7 @@ public class Day19_TestNGAnnotations {
     public void test2(){
         System.out.println("Test 2");
     }
-    @Test(enabled = false)
+    @Test(enabled = false,groups = "regression-tests")
     public void test3(){
         System.out.println("Test 3");
     }
@@ -89,4 +106,5 @@ public class Day19_TestNGAnnotations {
     public void test6(){
         System.out.println("Test 6");
     }
+//    test6 >test7 >test5 > test4
 }
