@@ -1,0 +1,18 @@
+Smoke test e saga tiklayip xml dosyasi olustur
+Run Et
+Projeye tıkla > Run > Edit configuration
+Xml dosyasını sec > listeners > + a tikla > reports lari ekle
+APPLY > OK
+XML i run et
+Projeyi yenile
+test-output dosyasında raporlar cikmis olacak
+******************************
+Eclipse: test-output dosyası testng non xml raportlari otomatik olacak oluşur
+IntelliJ: bu dosyanın oluşması icin mini bir ayar gerekir
+******TRABLE SHOOOTING***
+1. Xml dosyası classa saga tiknayip create xml seklinde oluşturulmalı
+2. Xml RUN edilmeli
+3. proje>run edit configurations>listeners> rapolari ekle ve kaydet
+4. RAPORTARIN CIKMASI ICIN BU ILISKILENDIRDIGIM XML DOSYASI RUN EDILMESI
+
+https://b103104105jav-dd63758.slack.com/files/U043P6RKW67/F04N4GY8MC3/image.png
