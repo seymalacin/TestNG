@@ -68,4 +68,10 @@
         *data provider ile paralel test yapilabilir.
 **********************************************************************************
 Interview Sorulari :
-1.
+1. Release(birakmak,yayinlamak) e katildin mi?
+-Evet.
+-Yilda 2 onemli (fall, spring) release, 4 minor release olur
+Her bir release den once regression testi yapilir.
+Relase sirasinda yasanan problemlerin testi icin de tester hazir bulunur.
+Release lerde PO lar ve regression testerlar aktifdir.
+-
