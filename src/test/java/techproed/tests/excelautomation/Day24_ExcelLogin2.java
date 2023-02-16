@@ -35,6 +35,7 @@ public class Day24_ExcelLogin2 {
             blueRentalLoginPage.passwordBox.sendKeys(data.get("password"));
             ReusableMethods.waitFor(1);
             blueRentalLoginPage.loginButton.click();
+
             //            GIRIS YAPILDI
             ReusableMethods.waitFor(1);
             ReusableMethods.verifyElementDisplayed(blueRentalHomePage.userID);//ASSERTION

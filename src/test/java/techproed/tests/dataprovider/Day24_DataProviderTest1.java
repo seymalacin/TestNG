@@ -32,6 +32,7 @@ public class Day24_DataProviderTest1 {
                 {"toyota"},
                 {"volvo"}
         };
+
         return urunListesi;
     }
     //    TEST METOTU

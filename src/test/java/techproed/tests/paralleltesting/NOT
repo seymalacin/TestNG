@@ -1,4 +1,4 @@
-1. paralleltesting klasoru olustur
+++1. paralleltesting klasoru olustur
 2. en az 2 adet test sinifi olustur.(biz 3 tane olusturduk)
 3. parallel test icin yeni bir xml dosyasi olustur : paralleltest.xml
 --------------------

@@ -37,6 +37,7 @@ public class Day24_DataProviderTest3 {
         blueRentalLoginPage.passwordBox.sendKeys(sifre);
         ReusableMethods.waitFor(1);
         blueRentalLoginPage.loginButton.click();
+
         //            GIRIS YAPILDI
         ReusableMethods.waitFor(1);
         ReusableMethods.verifyElementDisplayed(blueRentalHomePage.userID);//ASSERTION
