@@ -32,7 +32,7 @@ public class Listeners implements ITestListener {
     public void onTestFailure(ITestResult result) {
         System.out.println("onTestFailure-Sadece DAIL olan testlerden SONRA tek bir kez çagirilir :"+result.getName());
         try {
-            ReusableMethods.getScreenshot("Test-Case-FAIL :"+result.getName());
+            ReusableMethods.getScreenshot("Test-Case-FAIL :"+result.getName());//bir methot fail ettinde otomatik olarak ekran goruntusunu al
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

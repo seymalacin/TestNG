@@ -22,7 +22,7 @@ Metot da setRetryAnalyzer kullan: annotation.setRetryAnalyzer(ListenersRetry.cla
 public class ListenersRetryAnalyzer implements IAnnotationTransformer {
 
     //    Bu sinifin amaci, TUM FAILE TEST CASELERI BIR KEZ DAHA AUTOMATIK OLARAK XML FILE ILE RUN ETMEK
-    // BU SINIF ListenersRetry sınıfını xml de kulanılabılmek ıcın olusturuldu
+    // BU SINIF ListenersRetry sınıfını xml de kulanılabılmek ıcın olusturulduttttttttttttttttttttttttttttttttttttttttttttttt
     @Override
     public void transform(ITestAnnotation annotation, Class testClass, Constructor testConstructor, Method testMethod) {
 //        Bu sinif ListenersRetry util classina baglidir
